@@ -8,7 +8,7 @@ type ErrorState = {
   message: string;
 };
 
-export const Contact = () => {
+export const Contact: React.FC = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");

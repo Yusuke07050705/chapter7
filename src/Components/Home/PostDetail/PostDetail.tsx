@@ -1,15 +1,7 @@
-import { useState, useEffect, use } from "react"
+import { useState, useEffect } from "react"
 import styles from "./PostDetail.module.css"
 import { useParams } from "react-router-dom";
-
-type Post = {
-  id: string;
-  createdAt: string;
-  title: string;
-  content: string;
-  categories: string[];
-  thumbnailUrl: string;
-}
+import { Post } from "../../../types/post";
 
 export const PostDetail = () => {
   const { id } = useParams<{ id: string }>();

@@ -1,16 +1,7 @@
-import React from "react";
 import styles from "./Home.module.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
-type Post = {
-  id: string;
-  createdAt: string;
-  title: string;
-  content: string;
-  categories: string[];
-  thumbnailUrl: string;
-}
+import { Post } from "../../types/post";
 
 export const Home = () => {
   const [ posts, setPosts ] = useState<Post[]>([]);
